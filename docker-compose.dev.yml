@@ -5,9 +5,9 @@ services:
     tty: true
     build:
       dockerfile: Dockerfile.dev
-      context: .
+      context: ./videos-upload-client
     volumes:
-      - .:/home/videos
+      - ./videos-upload-client:/home/videos
 
   nginx:
     restart: always
