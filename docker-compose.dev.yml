@@ -1,0 +1,21 @@
+version: '3'
+services:
+  # 3000
+  client:
+    tty: true
+    build:
+      dockerfile: Dockerfile.dev
+      context: .
+    volumes:
+      - .:/home/videos
+
+  nginx:
+    restart: always
+    image: ermiry/videos-nginx:development
+    ports:
+      - '80:80'
+
+networks:
+  default:
+    external:
+      name: videos
