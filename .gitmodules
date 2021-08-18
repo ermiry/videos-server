@@ -1,3 +1,6 @@
 [submodule "videos-service"]
 	path = videos-service
 	url = https://github.com/ermiry/videos-service
+[submodule "videos-upload-client"]
+	path = videos-upload-client
+	url = https://github.com/ermiry/videos-upload-client
