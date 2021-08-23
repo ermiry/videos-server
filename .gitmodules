@@ -7,3 +7,6 @@
 [submodule "videos-stream-client"]
 	path = videos-stream-client
 	url = https://github.com/ermiry/videos-stream-client
+[submodule "stream-service"]
+	path = stream-service
+	url = https://github.com/ermiry/stream-service
