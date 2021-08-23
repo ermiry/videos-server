@@ -4,3 +4,6 @@
 [submodule "videos-upload-client"]
 	path = videos-upload-client
 	url = https://github.com/ermiry/videos-upload-client
+[submodule "videos-stream-client"]
+	path = videos-stream-client
+	url = https://github.com/ermiry/videos-stream-client
