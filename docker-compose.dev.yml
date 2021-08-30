@@ -5,6 +5,15 @@ services:
     tty: true
     build:
       dockerfile: Dockerfile.dev
+      context: ./videos-stream-client
+    volumes:
+      - ./videos-stream-client:/home/stream
+
+  # 3001
+  upload:
+    tty: true
+    build:
+      dockerfile: Dockerfile.dev
       context: ./videos-upload-client
     volumes:
       - ./videos-upload-client:/home/videos
